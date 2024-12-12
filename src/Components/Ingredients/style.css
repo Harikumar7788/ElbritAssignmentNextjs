@@ -1,0 +1,176 @@
+/* General Styles for Ingredients Section */
+.ingredients {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-card {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .section-tag {
+    font-size: 14px;
+    color: #003569;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #17414F;
+    font-family: 'Jost', sans-serif;
+    margin: 10px 0;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    color: #727272;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  /* Ingredient Cards Layout */
+  .ingredient-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Makes the layout responsive */
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Ingredient Card */
+  .ingredient-card {
+    background-color: #e2f5fb;
+    border-radius: 15px;
+    padding: 20px;
+    height: 210px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .ingredient-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #fff; /* White text color on darker background */
+  }
+  
+  .ingredient-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #003569;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+  }
+  
+  .ingredient-description {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+  }
+  
+  .see-more {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-description {
+      font-size: 0.9rem;
+    }
+  
+    .ingredient-title {
+      font-size: 1.2rem;
+    }
+  
+    .ingredient-description {
+      font-size: 0.9rem;
+    }
+  
+    .ingredient-card {
+      height: 250px;
+    }
+  
+    .ingredient-cards {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts to fit larger cards on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .ingredient-card {
+      height: 270px;
+    }
+  
+    .ingredient-title {
+      font-size: 1rem;
+    }
+  
+    .ingredient-description {
+      font-size: 0.8rem;
+    }
+  
+    .see-more {
+      font-size: 0.9rem;
+    }
+  
+    .ingredient-cards {
+      grid-template-columns: 1fr; /* Stacks cards vertically on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .section-description {
+      font-size: 0.8rem;
+    }
+  
+    .ingredient-card {
+      height: 230px;
+    }
+  
+    .ingredient-title {
+      font-size: 0.9rem;
+    }
+  
+    .ingredient-description {
+      font-size: 0.7rem;
+    }
+  
+    .see-more {
+      font-size: 0.8rem;
+    }
+  }
+  

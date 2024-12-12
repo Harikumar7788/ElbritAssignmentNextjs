@@ -1,0 +1,129 @@
+.footer {
+    background-color: #073845;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Added spacing for better layout on small screens */
+    margin-bottom: 20px;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(33.33% - 24px); /* Responsive width for 3 items per row */
+    min-width: 280px; /* Ensures items don't shrink too much */
+    max-width: 400px;
+    border-radius: 15px;
+    background-color: #215d72;
+    padding: 16px;
+    margin: 12px auto;
+  }
+  
+  .icon-container {
+    background-color: #ffffff;
+    color: #073845;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-container {
+    text-align: left;
+  }
+  
+  .label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    font-family: 'jost';
+  }
+  
+  .info {
+    font-family: 'jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+  
+  .footer-logo {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically for responsiveness */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-image {
+    width: 120px; /* Adjusted for responsiveness */
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 2px;
+  }
+  
+  .logo-description {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 350;
+    font-family: 'jost';
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center; /* Center text for better readability */
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 20px;
+    font-family: 'jost';
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .logo-description {
+      font-size: 13px; /* Slightly smaller font for mobile */
+      line-height: 22px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px; /* Adjusted for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .icon-container {
+      font-size: 18px; /* Adjusted icon size for small screens */
+      padding: 12px;
+    }
+  
+    .label,
+    .info {
+      font-size: 14px; /* Unified font size for mobile readability */
+    }
+  }
+  

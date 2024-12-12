@@ -1,0 +1,110 @@
+/* News Section */
+.news {
+    margin-top: 570px;
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  
+  .news-section-tag {
+    font-size: 16px;
+    color: #003569;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: 'jost';
+    letter-spacing: 1px;
+  }
+  
+  .news-heading {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'jost';
+    color: #17414f;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox Layout for News Cards */
+  .news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;  /* Adds space between the cards */
+  }
+  
+  .news-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 100%;
+  }
+  
+  .large-card {
+    flex: 1 1 calc(50% - 16px); /* Takes up 50% width minus gap */
+    height: 380px;
+    object-fit: cover;
+  }
+  
+  .small-card {
+    flex: 1 1 calc(100% - 16px); /* Takes up 100% width minus gap */
+    height: 250px;
+  }
+  
+  .news-date {
+    position: absolute;
+    top: 10px;
+    left: -2px;
+    background-color: #003569;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    font-family: 'jost';
+  }
+  
+  /* News Image */
+  .news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-size: cover;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  
+  .title {
+    font-family: 'jost';
+    font-size: 26px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 32px;
+    left: 12px;
+    color: #ffffff;
+  }
+  
+  /* Responsive Adjustments for Smaller Devices */
+  @media screen and (max-width: 768px) {
+    .news-heading {
+      font-size: 28px; /* Slightly smaller on mobile */
+    }
+  
+    .news-cards {
+      flex-direction: column; /* Stack the cards on mobile */
+    }
+  
+    .large-card {
+      flex: 1 1 100%; /* Full width for large cards on small screens */
+      height: 300px; /* Reduced height for mobile */
+    }
+  
+    .small-card {
+      flex: 1 1 100%; /* Full width for small cards on small screens */
+      height: 200px; /* Reduced height for mobile */
+    }
+  }
+  
